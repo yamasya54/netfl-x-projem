@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <h1 id="title">NET<SPan>FLIX</SPan></h1>
+            <h3 id="description"> Thank you for signing up to Netflix.Tell me more about yourself.</h3>
+        </header>
+        <section id="survey-form-container">
+         <form action="result.html" method="get">
+            <div class="input-box">
+               <label for="name">İsim</label>
+               <br>
+               <input 
+               type="text"
+               name="name"
+               id="name"
+               placeholder="İsminizi giriniz">
+            </div>
+            <div class="input-box">
+                <label for="age">Yaş</label><br>
+                <input 
+                type="number" 
+                name="age"
+                id="age"
+                placeholder="Yaşınızı giriniz">
+            </div>    
+            <div class="input-box">
+                <label for="email">Email</label><br>
+                <input 
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Email adresinizi giriniz">
+            </div>
+            <div class="input-box">
+                <label for="">Content Type</label><br>
+                <select name="content" id="dropdown">
+                    <option value="" >Lütfen seçiniz</option>
+                    <option value="movies">Movies</option>
+                    <option value="series">Series</option>
+                    <option value="tv-shows">Tv Shows</option>
+                    </select>
+            </div>
+            <div class="input-box" id="checkbox">
+                <label for="">Movie Type</label><br>
+                <input type="checkbox" name="movie1" id="first-check">
+                <label for="first-check">Comedy</label><br>
+                <input type="checkbox" name="movie2" id="second-check">
+                <label for="second-check">Action</label><br>
+                <input type="checkbox" name="movie3" id="third-check">
+                <label for="third-check">Romance</label><br>
+            </div>
+            <div class="input-box" id="radio">
+                    <label for="Gender">Gender</label>
+                    <br>
+                    <input type="radio" name="gender" id="first-radio" value="Male">
+                    <label for="first-radio">Male</label>
+                    <br>
+                    <input type="radio" name="gender" id="second-radio" value="Female">
+                    <label for="second-radio">Female</label>
+                    <br>
+                    <input type="radio" name="gender" id="third-radio" value="other">
+                    <label for="third-radio">Other</label>
+            </div>
+            <div class="input-box">
+                <label for="feedback">Feedback</label>
+                <br>
+                 <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Düşünceleriniz bizim için değerlidir."></textarea>
+            </div>
+            <div class="form-submit">
+                <button id="form-button">Send</button>
+            </div>
+
+         </form>
+        </section>
+    </div>
+</body>
+</html>
